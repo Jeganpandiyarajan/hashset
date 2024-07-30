@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+    static void fun(String ch){
+        HashSet<Character> re=new HashSet<Character>();
+        for(int i=0;i<ch.length();i++){
+            re.add(ch.charAt(i));
+        }
+        System.out.print(re);
+    }
+	public static void main(String[] args) {
+	String ch="india";
+	fun(ch);
+	}
+}

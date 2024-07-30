@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+    static void fun(String ch,String ch2){
+        HashSet<Character>re=new HashSet<Character>();
+        for(int i=0;i<ch2.length();i++){
+            re.add(ch2.charAt(i));
+        }
+        int count=0;
+        for(char d : re){
+            if(ch.indexOf(d)>=0){
+                count++;
+            }
+        }
+        System.out.print(count);
+    }
+	public static void main(String[] args){
+		String ch="india";
+		String ch2="china";
+		fun(ch,ch2);
+	}
+}
